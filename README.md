@@ -4,7 +4,7 @@
 
 1. `cd starter`
 1. Run `npm i jest —save-dev` in your `starter` folder.
-1. Create a ` test`` folder at the root of your  `starter` folder.
+1. Create a `test` folder at the root of your `starter` folder.
 1. Jest will look for files that have `.spec` in them inside a folder named test or tests. In your `test` folder, create a file called `myFuncs.spec.js`. This is where we will test the code in `myFuncs.js`
 
 <br>
