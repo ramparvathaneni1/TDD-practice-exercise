@@ -1,6 +1,7 @@
 const {add, multiply, getUserByID } = require('../myFuncs');
 
-describe ('addThese', () => {
+describe ('addThese', () => {    
+
     test('Does module have add', () => {
         expect(add).toBeDefined();
     })
