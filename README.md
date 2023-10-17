@@ -69,7 +69,7 @@ You can probably read through this code an tel what it's doing. However, to chec
 
 ## YOU DO
 
-1. Create a 2nd test case for the `add` function.
+1. Create a 3rd test case for the `add` function.
 1. In `myFuncs.js` create function called `multiply` that returns the product of two integers.
 1. Create a test case to confirm if the `multiply` function exists.
 1. Create 2 test cases for `multiply` using `actual/expected`.
