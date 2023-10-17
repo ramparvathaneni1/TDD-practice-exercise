@@ -78,21 +78,8 @@ You can probably read through this code an tel what it's doing. However, to chec
 
 ## Write tests and code to return a user in `test/myFuncs.spec.js`
 
-1. In the `module` folder there is a `userAPI` file. This file contains some hard-coded fake user data. We need to import it at the top of our `myFuncs.js` file.
-
-   ```js
-   const { getUser } = require("./module/userAPI");
-   ```
-
-1. Next, we'll add a simple function that will return a user based on the argument we pass in. Make sure to export the function at the bottom of the file.
-
-   ```js
-   const getUserByID = async (userId) => {
-     return await getUser(userId);
-   };
-   ```
-
-1. In the test file, create a test case to confirm that the function is defined.
+   
+1. We want to write the test before the code. In `myFuncs.spec.js` file, create a test case to confirm that the function is defined. This test should fail initially.
 
    ```js
    test("Does module have getUserByID", () => {
@@ -100,7 +87,13 @@ You can probably read through this code an tel what it's doing. However, to chec
    });
    ```
 
-1. Finally, we'll create a test to return the Mehgan user object when we pass an argument of `2` to the function. Make sure to import the function at the top of the file.
+1. Next, in `myFuncs.js` we'll add a `getUserByID` function declaration to make the test pass. **Make sure to export the function at the bottom of the file.**
+
+   ```js
+   const getUserByID = () => {};
+   ```
+
+1. Next, we'll create a test to return the Mehgan user object when we pass an argument of `2` to the function. Make sure to import the function at the top of the `myFuncs.spec.js` file.
 
    ```js
    test("myFuncs#getUserByID when passed userID 2 will return Mehgan", async () => {
@@ -112,4 +105,18 @@ You can probably read through this code an tel what it's doing. However, to chec
      };
      expect(actual).toEqual(expected);
    });
+   ```
+
+1. In the `module` folder there is a `userAPI` file. This file contains some hard-coded fake user data. We need to import it at the top of our `myFuncs.js` file.
+
+   ```js
+   const { getUser } = require("./module/userAPI");
+   ```
+ 
+1. Finally, in `myFuncs.js` we'll add a simple function that will return a user based on the argument we pass in. **Make sure to export the function at the bottom of the file.**
+
+   ```js
+   const getUserByID = async (userId) => {
+     return await getUser(userId);
+   };
    ```
