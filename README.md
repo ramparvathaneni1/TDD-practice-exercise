@@ -27,6 +27,35 @@ You can probably read through this code and tell what it's doing. However, to ch
 
 <br>
 
+## Jest Globals
+
+[Jest Docs](https://jestjs.io/)
+
+Jest Globals are core functions of test that are globally available when running Jest code. You do not need to import them into your test files.
+
+Some commonly used Globals:
+
+- [Describe](https://jestjs.io/docs/api#describename-fn)
+   - describe(name, fn) creates a block that groups together several related tests. 
+- [Test](https://jestjs.io/docs/api#testname-fn-timeout)
+   - All you need in a test file is the test method which runs a test 
+- [BeforeEach](https://jestjs.io/docs/api#beforeeachfn-timeout)
+   - Runs a function before each of the tests in this file runs. This is often useful if you want to reset some global state that will be used by many tests.
+- [afterEach](https://jestjs.io/docs/api#aftereachfn-timeout)
+   - Runs a function after each one of the tests in this file completes. This is often useful if you want to clean up some temporary state that is created by each test.
+
+<br>
+
+## Jest Expect
+
+Jest Expect is what we will use to determine if our test pass or fail. Expect has two primary types of utility functions it uses to verify complex assertions:
+
+- [Modifiers: .not, .resolve, .reject](https://jestjs.io/docs/expect#modifiers)
+- [Matchers: .toBe, toBeDefined, .toBeFalse, .toEqual, and among many others.](https://jestjs.io/docs/expect#matchers) 
+
+
+<br>
+
 ## Write tests using Jest in `test/myFuncs.spec.js`
 
 1. First, import the function that you want to test.
