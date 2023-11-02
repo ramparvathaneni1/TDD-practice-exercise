@@ -1,4 +1,4 @@
-// This is meant to spoof an API call that we will unit test wiht jest
+// This is meant to spoof an API call that we will unit test with jest
 
 const fakeUserData = {
     0: {

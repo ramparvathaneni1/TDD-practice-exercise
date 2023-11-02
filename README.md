@@ -11,7 +11,7 @@
 
 ## Manually test `myFuncs.js`
 
-You can probably read through this code an tel what it's doing. However, to check this code in a `node` environment you can try the following.
+You can probably read through this code and tell what it's doing. However, to check this code in a `node` environment you can try the following.
 
 1. Open a new Terminal window or tab and type `node`.
 
@@ -35,7 +35,7 @@ You can probably read through this code an tel what it's doing. However, to chec
    const { add } = require("../myFuncs");
    ```
 
-1. Next, we'll create a `describe` block for our series of `myFunc.js` tests. The describe block is a way to create specific containers for your test:
+1. Next, we'll create a `describe` block for our series of `myFuncs.js` tests. The describe block is a way to create specific containers for your test:
 
    ```js
    describe("myFuncs.js tests", () => {});
